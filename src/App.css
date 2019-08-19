@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+
+}
+.content {
+  float: left;
+  width: 650px;
+  min-height: 150px;
+  padding: 10px;
+  color: white;
+  background-color: blue;
+}
+.sidebar {
+  float: left;
+  width: 150px;
+  min-height: 150px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(46, 204, 113, 0.8);
+}

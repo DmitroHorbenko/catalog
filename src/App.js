@@ -1,26 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './Header'
+import Content from './Content'
+import Sidebar from './Sidebar'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      photos: [],
+      albums: [],
+      currentAlbum: 1,
+      cart: []
+    };
+
+    this.getAllAlbums();
+    this.getAllPhoto()
+  }
+
+  getAllAlbums() {
+    return fetch('https://jsonplaceholder.typicode.com/albums')
+        .then((res) => res.json())
+        .then((res)=> this.setState({albums: res}))
+  }
+
+  getAllPhoto() {
+    return fetch('https://jsonplaceholder.typicode.com/photos')
+        .then((res) => res.json())
+        .then((res)=> this.setState({photos: res}))
+  }
+
+  setCurrentAlbum = (value) => {
+    this.setState({ currentAlbum: +value })
+  }
+
+  addBuy = (id) => {
+    let newElement = this.state.photos.find(element => element.id === id)
+    this.setState({
+      cart: [...this.state.cart, newElement]
+    })
+  }
+
+  render() {
+    return (
+        <section>
+          <div className={"header"}><Header cart={this.state.cart}/></div>
+          <div className={"sidebar"}><Sidebar albums={this.state.albums} setCurrentAlbum={this.setCurrentAlbum}/></div>
+          <div className={"content"}><Content photos={this.state.photos} currentAlbum={this.state.currentAlbum}  addBuy={this.addBuy}/></div>
+        </section>
+    )
+  }
 }
 
 export default App;
