@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72fe7693-e6cb-4a76-99ed-d8999101a681" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +34,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\training\react\3\catalog2\src\Component" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,6 +79,7 @@
       <updated>1566197032518</updated>
       <workItem from="1566197034707" duration="662000" />
       <workItem from="1566197993293" duration="3259000" />
+      <workItem from="1566202117201" duration="147000" />
     </task>
     <servers />
   </component>
